@@ -150,8 +150,8 @@ nav a[aria-current="page"] {
   font-weight: 600;
 }
 
-/* Theme Toggle Button */
-.theme-toggle-btn {
+/* Download PDF Button */
+.download-pdf-btn {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -170,23 +170,30 @@ nav a[aria-current="page"] {
   white-space: nowrap;
 }
 
-.theme-toggle-btn:hover {
+.download-pdf-btn:hover {
   background-color: var(--brown-primary);
   border-color: var(--brown-primary);
   color: #ffffff;
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(122, 72, 43, 0.25);
 }
 
-.theme-icon {
-  font-size: 13px;
+.pdf-icon {
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1;
   color: var(--brown-primary);
-  transition: transform .3s ease, color .2s ease;
+  transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1), color .2s ease;
+  display: inline-block;
 }
 
-.theme-toggle-btn:hover .theme-icon {
+.download-pdf-btn:hover .pdf-icon {
   color: #ffffff;
-  transform: rotate(25deg) scale(1.2);
+  transform: translateY(3px);
+}
+
+.pdf-label {
+  transition: color .2s ease;
 }
 
 /* ==========================================================================
